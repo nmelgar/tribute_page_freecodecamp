@@ -1,0 +1,111 @@
+/*
+  FONTS
+  Variables
+  General
+  Header
+  Main
+  Images
+  footer
+  Media Queries
+  Notes
+*/
+/*--------->FONTS<-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+/*--------->Variables<-----------*/
+:root {
+  --ligth-brown: #D9B777;
+  --skin-color: #D9C0A3;
+  --light-red: #BF3124;
+  --dark-red: #8C2C23;
+  --dark: #0D0D0D;
+}
+
+/*--------->General Styles<-----------*/
+body {
+  background-color: var(--ligth-brown);
+  font-size: 16px;
+  font-family: 'Nova Mono', monospace;
+}
+
+#main {
+  margin: 0 auto;
+  /*Max width for the main container*/
+  max-width: 960px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--light-red);
+}
+
+h2 {
+  color: var(--dark-red);
+}
+
+/*--------->HEADER<-----------*/
+header {
+  text-align: center;
+}
+
+/*Make responsive image*/
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/*--------->Main<-----------*/
+main {
+  background-color: var(--skin-color);
+  text-align: center;
+  padding: 10px;
+}
+
+ul {
+  display: inline-block;
+  line-height: 1.8;
+  margin: auto;
+  text-align: left;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  width: 80%;
+}
+
+ul li {
+  color: var(--dark);
+}
+
+/*--------->Footer<-----------*/
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--light-red)
+}
+
+footer a:hover {
+  color: var(--skin-color)
+}
+
+footer a:active {
+  color: var(--dark)
+}
+
+footer a:visited {
+  color: var(--light-red)
+}
+
+/*--------->Media Queries<-----------*/
+/*--------->NOTES<-----------*/
+/*
+- Para centrar algo horizontalmente en navegadores modernos, usa display:
+ flex; justify-content: center;
+
+- Sin embargo, en navegadores antiguos como IE8-9, flexbox no está disponible.
+Para poder centrar un elemento horizontalmente con respecto a su contenedor,
+usa margin: 0 auto;
+
+*/
